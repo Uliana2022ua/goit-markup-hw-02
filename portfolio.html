@@ -6,111 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
-<body>
+<body class="body">
     <!--Header-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/" class="logo" lang="en">WebStudio</a></li>
-                <li><a href="./index.html">Студія</a></li>
-                <li><a href="./portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
+    <header class="header">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo link" lang="en"><span class="logo-blue">Web</span>Studio</a>
+          <ul class="nav-list list">
+            <li class="header-list-item">
+              <a href="./index.html" class="header-list-link link">Студія</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./portfolio.html" class="header-list-link link">Портфоліо</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-list-link link">Контакти</a>
+            </li>
+          </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+380961111111</a></li>
+        <ul class="link-connection list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-list-link link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header-tel-link link">+380961111111</a>
+          </li>
         </ul>
-    </header>
+      </header>
+
     <main>
-        <!--Main content-->
-        <section class="main-content">
-            <ul>
-                <li><button type="button"></button>Усі</button></li>
-                <li><button type="button"></button>Веб-сайти</button></li>
-                <li><button type="button"></button>Додатки</button></li>
-                <li><button type="button"></button>Дизайн</button></li>
-                <li><button type="button"></button>Маркетинг</button></li>
+        <!--Filters-->
+        <section class="filters">
+            <h1 class="visually-hidden">портфоліо</h1>
+            <ul class="filters list">
+                <li class="filter-item"><button type="button" class="button">Усі</button></li>
+                <li class="filter-item"><button type="button" class="button">Веб-сайти</button></li>
+                <li class="filter-item"><button type="button" class="button">Додатки</button></li>
+                <li class="filter-item"><button type="button" class="button">Дизайн</button></li>
+                <li class="filter-item"><button type="button" class="button">Маркетинг</button></li>
             </ul>
 
-            <ul>
+            <ul class="content list">
                 <li>
                     <a href=""> <img src="./img/folio1.jpg" width="370" height="295" alt="фото трьох розробників" />
-                        <h3>Технокряк</h3>
-                        <p>Веб-сайт</p>
-                    </a>
+                        <h2 class="caption"><b>Технокряк</b></h2>
+                        <p class="text">Веб-сайт</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio2.jpg" width="370" height="295" alt="постер" />
-                        <h3>Постер New Orlean vs Golden Star</h3>
-                        <p>Дизайн</p>
-                    </a>
+                        <h2 class="caption"><b>Постер New Orlean vs Golden Star</b></h2>
+                        <p class="text">Дизайн</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio3.jpg" width="370" height="295" alt="Ресторан Seafood" />
-                        <h3>Ресторан Seafood</h3>
-                        <p>Додаток</p>
-                    </a>
+                        <h2 class="caption"><b>Ресторан Seafood</b></h2>
+                        <p class="text">Додаток</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio4.jpg" width="370" height="295" alt="чорні навушники" />
-                        <h3>Проєкт Prime</h3>
-                        <p>Маркетинг</p>
-                    </a>
+                        <h2 class="caption"><b>Проєкт Prime</b></h2>
+                        <p class="text">Маркетинг</p>
                 </li>
                 <li>
                     <a href="">
                         <img src="./img/folio5.jpg" width="370" height="295" alt="дві паперові корбки" />
-                        <h3>Проєкт Boxes</h3>
-                        <p>Додаток</p>
-                    </a>
+                        <h2 class="caption"><b>Проєкт Boxes</b></h2>
+                        <p class="text">Додаток</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio6.jpg" width="370" height="295" alt="монітор компютера" />
-                        <h3>Inspiration has no Borders</h3>
-                        <p>Веб-сайт</p>
-                    </a>
+                        <h2 class="caption"><b>Inspiration has no Borders</b></h2>
+                        <p class="text">Веб-сайт</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio7.jpg" width="370" height="295"
                             alt="фото видання Limited Edition" />
-                        <h3>Видання Limited Edition</h3>
-                        <p>Дизайн</p>
-                    </a>
+                        <h2 class="caption"><b>Видання Limited Edition</b></h2>
+                        <p class="text">Дизайн</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio8.jpg" width="370" height="295" alt="паперова етикетка" />
-                        <h3>Проєкт LAB</h3>
-                        <p>Маркетинг</p>
-                    </a>
+                        <h2 class="caption"><b>Проєкт LAB</b></h2>
+                        <p class="text">Маркетинг</p>
                 </li>
                 <li>
                     <a href=""> <img src="./img/folio9.jpg" width="370" height="295" alt="додаток на ноутбуці" />
-                        <h3>Growing Business</h3>
-                        <p>Додаток</p>
-                    </a>
+                        <h2 class="caption"><b>Growing Business</b></h2>
+                        <p class="text">Додаток</p>
                 </li>
             </ul>
         </section>
     </main>
 
     <!--Footer-->
-    <footer>
-        <a href="./index.html"> <b lang="en">WebStudio</b> </a>
+    <footer class="footer">
+        <a href="./index.html" class="logo link" lang="en"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
         <address id="contacts">
-            <ul>
-                <li>
-                    <a href="https://goo.gl/maps/n4bDGTXrcKqHtDmw6" target="_blank"
-                        rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+          <ul class="subject list">
+            <li>
+              <a href="https://goo.gl/maps/n4bDGTXrcKqHtDmw6" target="_blank" rel="noopener noreferrer nofollow" class="address link">м. Київ,
+                пр-т Лесі Українки, 26</a>
+            </li>
+            <li><a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a></li>
+          </ul>
         </address>
-    </footer>
+      </footer>
+
 </body>
 
 </html>
