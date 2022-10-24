@@ -14,6 +14,9 @@
 }
 
 /*Header*/
+.current {
+  color: var(--accent-color);
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -27,6 +30,7 @@
 }
 .link {
   text-decoration: none;
+
 }
 .link:hover,
 .link:focus {
@@ -35,6 +39,22 @@
 .list {
   list-style: none;
 }
+
+.header-list-link:hover,
+.header-list-link:focus {
+  color: #2196f3;
+}
+.link-connection {
+  color: var(--second-color); 
+}
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: (1.14);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
 .header-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -42,15 +62,7 @@
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.header-list-link:hover,
-.header-list-link:focus {
-  color: #2196f3;
-}
-.header-tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: (1.14);
-  letter-spacing: 0.02em;
+.link-connection {
   color: var(--second-color);
 }
 
@@ -61,18 +73,19 @@
 .content-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: calc(60 / 44);
+  line-height: (calc 60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-color);
 }
 .button-pointer {
+  font-family: inherit;
   border: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: (1.8);
+  line-height: 1.8;
   display: flex;
   align-items: center;
   text-align: center;
@@ -106,7 +119,6 @@
 
 .title {
   color: var(--main-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -152,6 +164,7 @@
 
 /*Filters*/
 .filters .button {
+  font-family: inherit;
   color: var(--main-color);
   background: #f5f4fa;
   font-weight: 500;
@@ -164,6 +177,7 @@ a {
   text-decoration: none;
 }
 .button {
+  font-family: inherit;
   border: none;
 }
 
