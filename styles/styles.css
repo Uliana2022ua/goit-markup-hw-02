@@ -30,7 +30,6 @@
 }
 .link {
   text-decoration: none;
-
 }
 .link:hover,
 .link:focus {
@@ -45,7 +44,7 @@
   color: #2196f3;
 }
 .link-connection {
-  color: var(--second-color); 
+  color: var(--second-color);
 }
 .header-tel-link {
   font-weight: 500;

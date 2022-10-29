@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -17,18 +21,16 @@
   <body class="body">
     <!--Header-->
     <header class="header">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo link" lang="en"
-          ><span class="logo-blue">Web</span>Studio</a
-        >
-        <ul class="nav-list list">
+      <div class="container"> 
+        <nav class="header-nav"> 
+        <a href="./index.html" class="logo" lang="en"><span class="logo-blue">Web</span>Studio</a>
+      
+      <ul class="nav-list list">
           <li class="header-list-item">
-            <a href="./index.html" class="header-list-link link">Студія</a>
+            <a class="current" href="./index.html" class="header-list-link link">Студія</a>
           </li>
           <li class="header-list-item">
-            <a class="current" href="./portfolio.html" class="header-list-link link"
-              >Портфоліо</a
-            >
+            <a href="./portfolio.html" class="header-list-link link">Портфоліо</a>
           </li>
           <li class="header-list-item">
             <a href="#" class="header-list-link link">Контакти</a>
@@ -37,21 +39,20 @@
       </nav>
       <ul class="link-connection list">
         <li>
-          <a href="mailto:info@devstudio.com" class="header-tel-link link"
-            >info@devstudio.com</a
-          >
+          <a href="mailto:info@devstudio.com" class="header-tel-link link">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111" class="header-tel-link link"
-            >+380961111111</a
-          >
+          <a href="tel:+380961111111" class="header-tel-link link">+380961111111</a>
         </li>
       </ul>
+    </div>
     </header>
 
+    
     <main>
       <!--Filters-->
       <section class="filters">
+        <div class="container">
         <h1 class="visually-hidden">портфоліо</h1>
         <ul class="filters list">
           <li class="filter-item">
@@ -70,9 +71,11 @@
             <button type="button" class="button">Маркетинг</button>
           </li>
         </ul>
+        </div>
 
         <ul class="content list">
-          <li>
+          <div class="container">
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio1.jpg"
@@ -80,11 +83,13 @@
                 height="295"
                 alt="фото трьох розробників"
               />
+              <div class="card-content"> 
               <h2 class="caption">Технокряк</h2>
-              <p class="text">Веб-сайт</p></a
-            >
+              <p class="text">Веб-сайт</p>
+            </div>
+            </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio2.jpg"
@@ -92,11 +97,13 @@
                 height="295"
                 alt="постер"
               />
+              <div class="card-content"> 
               <h2 class="caption">Постер New Orlean vs Golden Star</h2>
-              <p class="text">Дизайн</p></a
-            >
+              <p class="text">Дизайн</p>
+            </div>
+            </a>
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio3.jpg"
@@ -104,11 +111,14 @@
                 height="295"
                 alt="Ресторан Seafood"
               />
+              <div class="card-content"> 
               <h2 class="caption">Ресторан Seafood</h2>
-              <p class="text">Додаток</p></a
+              <p class="text">Додаток</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio4.jpg"
@@ -116,11 +126,14 @@
                 height="295"
                 alt="чорні навушники"
               />
+              <div class="card-content"> 
               <h2 class="caption">Проєкт Prime</h2>
-              <p class="text">Маркетинг</p></a
+              <p class="text">Маркетинг</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio5.jpg"
@@ -128,11 +141,14 @@
                 height="295"
                 alt="дві паперові корбки"
               />
+              <div class="card-content"> 
               <h2 class="caption">Проєкт Boxes</h2>
-              <p class="text">Додаток</p></a
+              <p class="text">Додаток</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio6.jpg"
@@ -140,11 +156,14 @@
                 height="295"
                 alt="монітор компютера"
               />
+              <div class="card-content"> 
               <h2 class="caption">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p></a
+              <p class="text">Веб-сайт</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio7.jpg"
@@ -152,11 +171,14 @@
                 height="295"
                 alt="фото видання Limited Edition"
               />
+              <div class="card-content"> 
               <h2 class="caption">Видання Limited Edition</h2>
-              <p class="text">Дизайн</p></a
+              <p class="text">Дизайн</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio8.jpg"
@@ -164,11 +186,14 @@
                 height="295"
                 alt="паперова етикетка"
               />
+              <div class="card-content"> 
               <h2 class="caption">Проєкт LAB</h2>
-              <p class="text">Маркетинг</p></a
+              <p class="text">Маркетинг</p>
+            </div>
+            </a
             >
           </li>
-          <li>
+          <li class="card">
             <a href="">
               <img
                 src="./img/folio9.jpg"
@@ -176,16 +201,21 @@
                 height="295"
                 alt="додаток на ноутбуці"
               />
+              <div class="card-content"> 
               <h2 class="caption">Growing Business</h2>
-              <p class="text">Додаток</p></a
+              <p class="text">Додаток</p>
+            </div>
+            </a
             >
           </li>
+          </div>
         </ul>
       </section>
     </main>
 
     <!--Footer-->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo link" lang="en"
         ><span class="logo-blue">Web</span
         ><span class="logo-white">Studio</span></a
@@ -213,6 +243,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
